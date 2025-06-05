@@ -1,6 +1,8 @@
 # Changes
 This folder contains modified code from the official metricX repo: https://github.com/google-research/metricx/tree/main
+
 Notably, I have added a command line argument for the cache directory and implemented proper batched inference support
+
 Here follows the original README.md file
 
 # MetricX
