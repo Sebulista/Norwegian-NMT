@@ -1,4 +1,5 @@
-"""This script aligns the parallel corpora at the sentence level using vecalign"""
+"""This script aligns the parallel corpora at the sentence level using vecalign
+Assumes vecalign is installed: https://github.com/thompsonb/vecalign"""
 from pathlib import Path
 
 from tempfile import TemporaryDirectory
