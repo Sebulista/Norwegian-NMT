@@ -57,7 +57,7 @@ def parse_args():
     parser.add_argument("--dataset", type = str, choices = ["25k", "50k"], default = "25k", help = "Which dataset split to use")
     parser.add_argument("--max_samples", type = int, default = None, help = "Number of samples to translate")
     
-    parser.add_argument("--cache_dir", type = str, default = "/cluster/work/projects/ec30/ec-jonassf/models", help = "cache directory for pretrained models")
+    parser.add_argument("--cache_dir", type = str, help = "cache directory for pretrained models")
     parser.add_argument("--scorer_model", type = str, default = "Unbabel/wmt22-comet-da", help = "Which model to use for scoring")
 
     #NorMistral args
