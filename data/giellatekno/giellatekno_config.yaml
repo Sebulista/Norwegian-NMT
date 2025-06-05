@@ -1,0 +1,149 @@
+default:
+  remove_lists: False
+  except_list: False
+  remove_titles: False
+  remove_italics: False
+  remove_bold: False
+  filter_language_tags: False
+  remove:
+    -
+  remove_contains:
+    -
+  exceptions:
+    -
+
+admin/fylkesmannen:
+  remove_lists: True
+  remove_titles: True
+  remove:
+    - "Du finner mer informasjon om valg på Kommunal- og moderniseringsdepartementets internettsider, se lenkene til høyre."
+    - "Nullmobbing.no provides information for children, young people and parents on bullying and rights."
+  remove_contains:
+    - "Publisert"
+    - "Published"
+    - "Fylkesmannen.no"
+    - "fylkesmannen.no"
+    - '\(lenke\)'
+    - '\(pdf\)'
+  exceptions:
+    - index_8
+    - index_15
+    - index_16
+    - index_23
+    - index_27
+    - index_31
+    - index_32
+    - index_35
+    - index_37
+    - index_38
+    - index_41
+  except_list: True
+
+admin/gonagasviessu.no:
+  remove_lists: True
+  remove_titles: True
+  remove_italics: True
+  remove:
+    - "Hopp til hovedinnhold"
+    - "Relaterte lenker"
+    - "Links"
+  exceptions:
+    - artikkel.html_tid=101274
+    - artikkel.html_tid=27561
+    - artikkel.html_tid=27595
+    - artikkel.html_tid=27596
+    - artikkel.html_tid=27767
+    - artikkel.html_tid=27829
+    - artikkel.html_tid=27830
+    - artikkel.html_tid=29702
+    - artikkel.html_tid=74170
+    - artikkel.html_tid=91112
+    - artikkel.html_tid=27425
+  except_change_lang:
+    from: nb
+    to: nn
+
+admin/helsenorge:
+  remove_bold: True
+  remove_titles: True
+  remove:
+    - "Søk..."
+    - "Hopp til hovedmeny"
+    - "Hopp til innholdet"
+    - '\(in Norwegian\).'
+  remove_contains:
+    - "Seksjon"
+
+facta/galdu:
+  remove_lists: True
+  filter_language_tags: True
+  remove:
+    - "Hopp til hovedinnholdet på siden"
+  
+facta/giellatekno:
+  remove_italics: True
+  remove_contains:
+    - '\$Id'
+    - "Link"
+    - "AnimalQuiz"
+
+facta/nav.no:
+  remove_contains:
+    - "some of this information is only available in Norwegian"
+
+facta/samikopiija:
+  remove_italics: True
+  filter_language_tags: True
+
+facta/skuvla.info:
+  remove_bold: True
+  remove_titles: True
+  remove_contains:
+    - "Foto"
+    - "Photo"
+    - "In English"
+    - "printed"
+    - "trykt"
+    - "edited by"
+    - "editing board"
+    - '21\.01\.2012'
+
+facta/skuvlahistorja1:
+  remove_contains:
+    - "Sámegillii"
+    - "Davvi Girji"
+    - "Article"
+    - "Artikkel"
+    - "English translation"
+    - "På norsk"
+    - "Foto"
+    - "Photo"
+    - "Åarjelh-saemien gielesne"
+    - "translated"
+
+ficti/fiction:
+  remove_contains:
+    - "ISBN"
+    - "Trykk:"
+
+laws/other_files:
+  remove_titles: True
+  remove_italics: True
+  remove_bold: True
+  filter_language_tags: True
+  remove_contains:
+    - "(in Norwegian)"
+
+samilogut/2016:
+  remove_bold: True
+  remove_contains:
+    - 'Midtbøen, A\. H\.'
+
+depts/other_files:
+  remove_contains:
+    - "Kandidat"
+
+depts/regjeringen.no:
+  filter_language_tags: True
+  remove_contains:
+    - "50 9730 Karasjok"
